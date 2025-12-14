@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <title> SubWay </title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div id="top_line"></div>
+  <header id="main_header">
+    <div class="header_top">
+      <h1><a href="#">SUBWAY</a></h1>
+      <button type="button" id="toggle">
+        전체메뉴보기 
+      </button>
+      <nav class="tnb">
+        <ul>
+          <li><a href="#">로그인</a></li>
+          <li><a href="#">회원가입</a></li>
+          <li>
+            <a href="#" class="lang">언어선택</a>
+            <ul class="lang_list">
+              <li><a href="#" class="on">KO</a></li>
+              <li><a href="#">EN</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <hr>
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a href="#">메뉴소개</a>
+          <div class="sub">
+            <ul>
+              <li><a href="#">샌드위치</a></li>
+              <li><a href="#">랩&middot;기타</a></li>
+              <li><a href="#">찹샐러드</a></li>
+              <li><a href="#">스마일 썹</a></li>
+              <li><a href="#">단체메뉴</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#">이용방법</a>
+          <div class="sub">
+            <ul>
+              <li><a href="#">써브웨이 이용방법</a></li>
+              <li><a href="#">단체메뉴 이용방법</a></li>
+              <li><a href="#">신선한 재료 소개</a></li>
+              <li><a href="#">App 이용방법</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#">새소식</a>
+          <div class="sub">
+            <ul>
+              <li><a href="#">이벤트&middot;프로모션</a></li>
+              <li><a href="#">뉴스&middot;공지사항</a></li>
+              <li><a href="#">광고영상</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#">써브웨이</a>
+          <div class="sub">
+            <ul>
+              <li><a href="#">써브웨이 역사</a></li>
+              <li><a href="#">써브웨이 약속</a></li>
+              <li><a href="#">샌드위치 아티스트 지원</a></li>
+              <li><a href="#">매장찾기</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#">가맹점</a>
+          <div class="sub">
+            <ul>
+              <li><a href="#">써브웨이 프랜차이즈</a></li>
+              <li><a href="#">가맹관련 FAQ</a></li>
+              <li><a href="#">가맹신청&middot;문의</a></li>
+              <li><a href="#">지사안내</a></li>
+              <li><a href="#">사업설명회</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#">온라인 주문</a>
+          <div class="sub">
+            <ul>
+              <li><a href="#">APP 주문</a></li>
+              <li><a href="#">단체주문</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <!-- tablet 로그인,회원가입 버튼-->
+    </nav>
+
+    <div class="sub_bg"></div>
+
+  </header>
+  <nav id="mobile_fix_btns">
+    <a href="#">홈</a>
+    <a href="#">주문하기</a>
+    <a href="#">로그인</a>
+    <a href="#">내정보</a>
+  </nav>
+  <hr>
+  <main id="main_container">
+    <section class="main_visual">
+      <div class="slide_container">
+        <div class="slides">
+          <div class="slide1">
+            <a href="#">
+              <img src="./images/main_banner1_l.jpg" alt="" class="desktop">
+              <!-- <img src="./images/m_slide1_m.jpg" alt="" class="tablet">
+              <img src="./images/m_slide1_s.jpg" alt="" class="mobile"> -->
+            </a>
+          </div>
+          <div class="slide2">
+            <a href="#">
+              <img src="./images/main_banner1_l.jpg" alt="" class="desktop">
+              <!-- <img src="./images/m_slide2_m.jpg" alt="" class="tablet">
+              <img src="./images/m_slide2_s.jpg" alt="" class="mobile"> -->
+            </a>
+          </div>
+          <div class="slide3">
+            <a href="#">
+              <img src="./images/main_banner1_l.jpg" alt="" class="desktop">
+              <!-- <img src="./images/m_slide3_m.jpg" alt="" class="tablet">
+              <img src="./images/m_slide3_s.jpg" alt="" class="mobile"> -->
+            </a>
+          </div>
+        </div>
+        <!-- <button type="button" class="prev">PREV</button>
+        <button type="button" class="next">NEXT</button> -->
+        <ul class="pagenate">
+          <li><a href="#" class="on">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+        </ul>
+      </div>
+      <div class="direct_btns">
+        <a href="#" class="btn1"><span>매장찾기</span></a>
+        <a href="#" class="btn2"><span>가맹신청&middot;문의</span></a>
+      </div>
+    </section>
+    <hr>
+    <section class="product_menu">
+      <div class="content_header">
+        <h2>Subway's Menu</h2>
+        <ul>
+          <li><a href="#" class="on"> 클래식 </a></li>
+          <li><a href="#"> 프레쉬&amp;라이트 </a></li>
+          <li><a href="#"> 프리미엄 </a></li>
+          <li><a href="#"> 아침메뉴 </a></li>
+        </ul>
+        <select class="mobile_menu_tab">
+          <option value="클래식" selected>클래식</option>
+          <option value="프레쉬라이트">프레쉬&amp;라이트</option>
+          <option value="프리미엄">프리미엄</option>
+          <option value="아침메뉴">아침메뉴</option>
+        </select>
+      </div>
+      <div class="content_body">
+        <ul>
+          <li>
+            <a href="#">
+              <figure>
+                <img src="./images/sandwich_cl01_01.jpg" alt="">
+                <img src="./images/btn_more.png" alt="" class="more">
+                <figcaption>
+                  <h3>에그마요</h3>
+                  <p>부드러운 달걀과 고소한 마요네즈가 만나<br>더 부드러운 스테디셀러</p>
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <figure>
+                <img src="./images/sandwich_cl02_01.jpg" alt="">
+                <img src="./images/btn_more.png" alt="" class="more">
+                <figcaption>
+                  <h3>이탈리안 비엠티</h3>
+                  <p>페퍼로니, 살라미 그리고 햄이 만들어내는 최상의 조화! 전세계가 사랑하는 써브웨이의 베스트셀러! Biggest Meatiest Tastiest, its’ B.M.T!</p>
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <figure>
+                <img src="./images/sandwich_cl03_01.jpg" alt="">
+                <img src="./images/btn_more.png" alt="" class="more">
+                <figcaption>
+                  <h3>비엘티</h3>
+                  <p>오리지널 아메리칸 스타일 베이컨의<br>풍미와 바삭함 그대로</p>
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <figure>
+                <img src="./images/sandwich_cl04_01.jpg" alt="">
+                <img src="./images/btn_more.png" alt="" class="more">
+                <figcaption>
+                  <h3>햄</h3>
+                  <p>기본 중에 기본!<br>풍부한 햄이 만들어내는<br>입 안 가득 넘치는 맛의 향연</p>
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr>
+    <section class="info_wrap">
+      <div class="innerbox">
+        <div class="usebox">
+          <h2>써브웨이를<br>제대로 즐기는 방법!</h2>
+          <a href="#">이용방법</a>
+          <span class="imgbox"></span>
+        </div>
+        <div class="historybox">
+          <h2>50년 역사를 가진<br>No.1 프랜차이즈의 성장기</h2>
+          <a href="#">써브웨이 역사</a>
+          <span class="imgbox"></span>
+        </div>
+        <div class="newsbox">
+          <div class="content_header">
+            <h2><span>What's New</span></h2>
+            <p><span>써브웨이의 다양한 소식을</span><span>빠르게 전달해드립니다.</span></p>
+          </div>
+          <div class="content_body">
+            <ul>
+              <li><a href="#">개인정보 처리방침 개정안내</a></li>
+              <li><a href="#">써브웨이와 함께하는 tvN, TVING '눈물의 여왕'</a></li>
+              <li><a href="#">써브웨이와 함께하는 TVING '피라미드 게임'</a></li>
+            </ul>
+            <a href="#" class="more">more</a>
+          </div>
+        </div>
+        <div class="bannerbox">
+          <div class="slide_container">
+            <div class="slides">
+              <a href="#"><img src="./images/drama.png" alt="얄미운 사랑"></a>
+              <a href="#"><img src="./images/apart.jpg" alt="아파트 404"></a>
+              <a href="#"><img src="./images/game.jpg" alt="피라미드 게임"></a>
+            </div>
+            <ul class="pagenate">
+              <li><a href="#" class="active">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section class="quickmenu">
+      <ul>
+        <li>
+          <a href="#"><strong>프랜차이즈</strong><span>개설절차/투자비용 정보</span></a>
+        </li>
+        <li>
+          <a href="#"><strong>지사안내</strong><span>수도권/지방 지사정보</span></a>
+        </li>
+        <li>
+          <a href="#"><strong>광고영상</strong><span>TV광고/동영상</span></a>
+        </li>
+        <li>
+          <a href="#"><strong>고객문의</strong><span>자주하는 질문/1:1문의</span></a>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <hr>
+  <footer id="main_footer">
+    <div class="footer_top">
+      <div class="innerbox">
+        <ul class="footer_menu">
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+          <li><a href="#">써브카드</a></li>
+          <li><a href="#">점주관리자</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <div class="footer_bottom">
+      <ul class="sns_icons">
+        <li><a href="#">instagram</a></li>
+        <li><a href="#">facebook</a></li>
+      </ul>
+      <div class="footer_info">
+        <!--
+          <address>
+            <p>
+              <span>서울시 서초구 강남대로 535 프린스빌딩 15층</span>
+              <span>대표 : INSOO CHO(인수조)</span>
+              <span>전화 : 02-797-5036</span>
+              <span>사업자등록번호 : 101-84-04143</span>
+            </p>
+          </address>
+        -->
+        <address>
+          <dl>
+            <dt>주소</dt><dd>서울시 서초구 강남대로 535 프린스빌딩 15층</dd>
+            <dt>대표</dt><dd>콜린클락</dd>
+            <dt>전화</dt><dd>02-797-5036</dd>
+            <dt>사업자등록번호</dt><dd>101-84-04143</dd>
+          </dl>
+        </address>
+        <p>SUBWAY &reg; is a Registered Trademark of Subway IP LLC. &copy; 2021 Subway IP LLC. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
