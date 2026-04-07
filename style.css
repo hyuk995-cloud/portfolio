@@ -539,3 +539,58 @@ img {
         grid-template-columns: 1fr;
     }
 }
+/* =============================================
+   MODAL POPUP
+============================================= */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    display: none; /* 기본 숨김 */
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    padding: 20px;
+    backdrop-filter: blur(5px);
+    cursor: zoom-out; /* 배경 클릭 시 닫힌다는 힌트 */
+}
+
+.modal-overlay.active {
+    display: flex; /* 활성화 시 노출 */
+}
+
+.modal-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90vh;
+    cursor: default; /* 이미지 영역은 기본 커서 */
+}
+
+.modal-content img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 90vh;
+    display: block;
+    border-radius: 4px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    /* 나타날 때 부드러운 효과 */
+    animation: modalIn 0.3s ease-out;
+}
+
+@keyframes modalIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.modal-close {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 36px;
+    cursor: pointer;
+    line-height: 1;
+}
